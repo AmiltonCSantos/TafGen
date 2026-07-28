@@ -1,6 +1,9 @@
 Como executar o sistema:<br>
 Você deve fazer a clonagem do repositorio.<br>
-na pasta TafGen/TafGen deve se executar o servidor<br>
+git clone https://github.com/AmiltonCSantos/TafGen <br>
+entrar na pasta<br>
+cd Tafgen <br>
+na pasta deve se executar o servidor<br>
 npx json-server --watch db.json --port 3001<br>
 ainda na mesma pasta deve se iniciar o sistema<br>
 executando <br>
@@ -21,6 +24,10 @@ link: https://react-hook-form.com/<br><br>
 
 Css3Nativo - Para estilização das paginas.<br>
 Json server - Para criar um banco de dados local.<br><br>
+
+Decisões Técnicas Importantes:<br>
+O uso de libraries para facilitar a criação de formularios e melhorar o visual dos alertas.<br>
+O Aprendizado para o uso dos estados via hook com useEffect, useState<br>
 
 O que faria se tivesse mais tempo :<br>
 Alteração de cores de acordo com a prioridade.<br>
