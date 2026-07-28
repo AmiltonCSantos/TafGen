@@ -28,7 +28,9 @@ function CadastrarTarefa() {
                 descricao: visualizarTarefa.descricao,
                 prioridade: visualizarTarefa.prioridade
             });
-            botao.style.display = "none";
+            if (botao) {
+                botao.style.display = "none";
+            }
         }
     }, [editarTarefa, reset]);
 
