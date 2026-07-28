@@ -1,0 +1,51 @@
+{
+  "tarefas": [
+    {
+      "tarefa": "Pegar Onibus",
+      "descricao": "as 23hrs",
+      "prioridade": "Baixa",
+      "status": "em processo",
+      "id": "Tvp0k1QicdE"
+    },
+    {
+      "tarefa": "asgasfg",
+      "descricao": "asdfgadg",
+      "prioridade": "Baixa",
+      "status": "em processo",
+      "id": "YnCFWrTcWk0"
+    },
+    {
+      "tarefa": "Amor",
+      "descricao": "1",
+      "prioridade": "Media",
+      "criadoEm": "2026-07-28T18:16:05.199Z",
+      "status": "pendente",
+      "id": "IvwfI5uvauM"
+    },
+    {
+      "tarefa": "Paixão",
+      "descricao": "gfdg",
+      "prioridade": "Urgente",
+      "criadoEm": "2026-07-28T18:16:12.679Z",
+      "status": "concluida",
+      "id": "gRnkDAVlaZQ"
+    },
+    {
+      "tarefa": "Coringa",
+      "descricao": "gdfg",
+      "prioridade": "Baixa",
+      "criadoEm": "2026-07-28T18:16:19.182Z",
+      "status": "concluida",
+      "id": "IlaQ6wFsYHM"
+    },
+    {
+      "tarefa": "Nova",
+      "descricao": "dg",
+      "prioridade": "Alta",
+      "criadoEm": "2026-07-28T18:17:57.758Z",
+      "status": "pendente",
+      "id": "zRY9f-1T5IE"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

@@ -1,0 +1,38 @@
+:root {
+    --background: #0d1117;
+    --card: #161b22;
+    --input: #21262d;
+    --border: #30363d;
+    --primary: #2383e2;
+    --primary-hover: #1b6fc2;
+    --text: #f0f6fc;
+    --text-secondary: #8b949e;
+    --backgroundcancel: #e53e3e;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 35px;
+    background: var(--card);
+    border-radius: 12px;
+    border: 1px solid var(--border);
+}
+
+button {
+    width: 12%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background: var(--primary);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.swal2-styled {
+    width: auto !important;
+    height: auto !important;
+    padding: 10px 20px !important;
+}

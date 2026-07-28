@@ -1,0 +1,86 @@
+    .topo {
+    display: flex;
+    margin-bottom: 25px;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+    .botoes {
+        width: auto;
+        padding: 14px 20px;
+        border: none;
+        border-radius: 8px;
+        background: var(--primary);
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .quadrodetarefas {
+        display: grid;
+        grid-template-columns: 1fr 2px 1fr;
+        gap: 20px;
+    }
+
+    .divisoria {
+        width: 2px;
+        background: linear-gradient(to bottom, transparent, var(--border, #ccc), transparent);
+        border-radius: 2px;
+        justify-self: center;
+        height: 100%;
+
+    }
+
+    .tarefas {
+        background-color: var(--background);
+        border: 1px solid #3f4450;
+        border-radius: 8px;
+        padding: 16px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .tarefas:hover {
+        background-color: #282d37;
+        transform: translateY(-2px);
+    }
+
+    .tarefas label {
+            font-weight: bold;
+            color: var(--primary);
+            margin-right: 6px;
+    }
+
+    .pesquisa {
+        padding: 18px 20px;
+        border: 1px solid var(--border, #ccc);
+        border-radius: 8px;
+        font-size: 15px;
+        width: 600px;
+        background: var(--input, #fff);
+        color: var(--text, #333);
+    }
+
+    .filtro {
+        display:flex;
+        border: 1px solid var(--border, #ccc);
+        border-radius: 8px;
+        font-size: 15px;
+        width: 850px;
+        background: var(--input, #fff);
+        color: var(--text, #333);
+        gap:10px;
+    }
+
+     .filtro label {
+         font-weight: bold;
+         color: var(--primary, #1e7ece);
+         font-size: 15px;
+         white-space: nowrap;
+         margin: 10px 20px;
+         align-items: center;
+     }
