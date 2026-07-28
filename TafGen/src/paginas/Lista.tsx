@@ -15,11 +15,11 @@ interface Tarefa {
 function Lista() {
     const navigate = useNavigate();
     const [posts, setPosts] = useState<Tarefa[]>([]);
-    const [idSelecionado, setIdSelecionado] = useState(null);
+    const [idSelecionado, setIdSelecionado] = useState<string | number | null>(null);
     const [busca, setBusca] = useState("");
     const [filtro, setFiltro] = useState("recentes")
 
-    function clique(id) {
+    function clique(id : string | number) {
         if (idSelecionado === id) {
             setIdSelecionado(null);
         } else {
