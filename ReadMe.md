@@ -1,7 +1,7 @@
 Como executar o sistema:<br>
 Você deve fazer a clonagem do repositorio.<br>
 git clone https://github.com/AmiltonCSantos/TafGen <br>
-entrar na pasta<br>
+o projeto está em uma subpasta então é preciso entrar na pasta<br>
 cd Tafgen <br>
 na pasta deve se executar o servidor<br>
 npx json-server --watch db.json --port 3001<br>
