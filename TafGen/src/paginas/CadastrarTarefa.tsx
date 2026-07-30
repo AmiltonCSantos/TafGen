@@ -3,8 +3,15 @@ import { useForm } from "react-hook-form";
 import { Link, useNavigate,useLocation } from "react-router-dom"
 import Swal from 'sweetalert2'
 import './CadastrarTarefa.css'
-
 function CadastrarTarefa() {
+
+    type Tarefas = {
+        tarefa: string;
+        descricao: string;
+        prioridade: string;
+        criadoEm: string;
+        status?: string;
+    };
 
     const navigate = useNavigate();
     const location = useLocation();
@@ -34,19 +41,18 @@ function CadastrarTarefa() {
         }
     }, [editarTarefa, reset]);
 
-
-    const onSubmit = async (data: any) => {
+    const onSubmit = async (tarefas : Tarefas) => {
 
         if (!editarTarefa) {
-            data.criadoEm = new Date().toISOString();
+            tarefas.criadoEm = new Date().toISOString();
         } else {
-            data.criadoEm = editarTarefa.criadoEm;
+            tarefas.criadoEm = editarTarefa.criadoEm;
         }
 
         try {
-            data.status = editarTarefa ? editarTarefa.status : "pendente";
+            tarefas.status = editarTarefa ? editarTarefa.status : "pendente";
 
-            if (!data.tarefa || !data.tarefa.trim()) {
+            if (!tarefas.tarefa || !tarefas.tarefa.trim()) {
                 Swal.fire({
                     icon: "error",
                     title: "Falta Informação",
@@ -66,7 +72,7 @@ function CadastrarTarefa() {
                 headers: {
                     "Content-Type": "application/json",
                 },
-                body: JSON.stringify(data),
+                body: JSON.stringify(tarefas),
             });
 
         if (resposta.ok) {

@@ -6,7 +6,6 @@ import './Lista.css'
 interface Tarefa {
   id: number;
   tarefa: string;
-  data: string;
   status: string;
   prioridade: string;
   criadoEm: string;
@@ -18,6 +17,12 @@ function Lista() {
     const [idSelecionado, setIdSelecionado] = useState<string | number | null>(null);
     const [busca, setBusca] = useState("");
     const [filtro, setFiltro] = useState("recentes")
+
+    useEffect(() => {
+        fetch("http://localhost:3001/tarefas")
+            .then((resposta) => resposta.json())
+            .then((dados) => setPosts(dados));
+    }, []);
 
     function clique(id: string | number) {
         if (idSelecionado === id) {
@@ -71,12 +76,6 @@ function Lista() {
             }
         });
     }
-
-    useEffect(() => {
-        fetch("http://localhost:3001/tarefas")
-           .then((resposta) => resposta.json())
-            .then((dados) => setPosts(dados));
-    }, []);
 
     return (
         <div className="container">

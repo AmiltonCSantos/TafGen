@@ -15,36 +15,20 @@
       "id": "YnCFWrTcWk0"
     },
     {
-      "tarefa": "Amor",
-      "descricao": "1",
+      "tarefa": "Limpar Banheiro",
+      "descricao": ". Limpar Vaso\n. Limpar Pia\n. Limpar Chão e Paredes\n\n\n\n",
       "prioridade": "Media",
-      "criadoEm": "2026-07-28T18:16:05.199Z",
+      "criadoEm": "2026-07-29T14:56:49.475Z",
       "status": "pendente",
-      "id": "IvwfI5uvauM"
+      "id": "WoiLWhqfG4w"
     },
     {
-      "tarefa": "Paixão",
-      "descricao": "gfdg",
+      "tarefa": "Banheiro",
+      "descricao": "Banheiro",
       "prioridade": "Urgente",
-      "criadoEm": "2026-07-28T18:16:12.679Z",
-      "status": "concluida",
-      "id": "gRnkDAVlaZQ"
-    },
-    {
-      "tarefa": "Coringa",
-      "descricao": "gdfg",
-      "prioridade": "Baixa",
-      "criadoEm": "2026-07-28T18:16:19.182Z",
-      "status": "concluida",
-      "id": "IlaQ6wFsYHM"
-    },
-    {
-      "tarefa": "Nova",
-      "descricao": "dg",
-      "prioridade": "Alta",
-      "criadoEm": "2026-07-28T18:17:57.758Z",
+      "criadoEm": "2026-07-30T14:52:09.108Z",
       "status": "pendente",
-      "id": "zRY9f-1T5IE"
+      "id": "MXJI_8mY8RE"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
