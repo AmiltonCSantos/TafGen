@@ -77,7 +77,7 @@ function Lista() {
         });
     }
 
-    const PrioridadeMap: { [prioridade: string]: number } = {
+    const prioridadeMap: { [prioridade: string]: number } = {
         "Urgente": 4,
         "Alta": 3, 
         "Media": 2,
@@ -121,7 +121,7 @@ function Lista() {
                                 }
 
                                 if (filtro === "prioridade") {
-                                    return b.prioridade.localeCompare(a.prioridade);
+                                    return prioridadeMap[b.prioridade] - prioridadeMap[a.prioridade];
                                 }
 
                                 const dataA = new Date(a.criadoEm || 0).getTime();

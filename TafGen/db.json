@@ -37,6 +37,14 @@
       "criadoEm": "2026-07-30T15:02:58.388Z",
       "status": "pendente",
       "id": "md3mkiFQOpM"
+    },
+    {
+      "tarefa": "Alta",
+      "descricao": "teste",
+      "prioridade": "Alta",
+      "criadoEm": "2026-07-30T15:20:41.981Z",
+      "status": "pendente",
+      "id": "ixI96M0hnNw"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
