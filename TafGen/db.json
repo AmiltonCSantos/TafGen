@@ -29,6 +29,14 @@
       "criadoEm": "2026-07-30T14:52:09.108Z",
       "status": "pendente",
       "id": "MXJI_8mY8RE"
+    },
+    {
+      "tarefa": "Tarefa não importante",
+      "descricao": "baixa",
+      "prioridade": "Baixa",
+      "criadoEm": "2026-07-30T15:02:58.388Z",
+      "status": "pendente",
+      "id": "md3mkiFQOpM"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

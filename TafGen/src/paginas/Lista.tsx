@@ -77,6 +77,13 @@ function Lista() {
         });
     }
 
+    const PrioridadeMap: { [prioridade: string]: number } = {
+        "Urgente": 4,
+        "Alta": 3, 
+        "Média": 2,
+        "Baixa": 1
+    }   
+
     return (
         <div className="container">
             <div className="topo">
@@ -94,11 +101,12 @@ function Lista() {
             </div>
 
             <div className="filtro">
-                <label htmlFor="prioridade">Filtrar:</label>
+                <label htmlFor="filtrar">Filtrar:</label>
                 <select value={filtro} onChange={(e) => setFiltro(e.target.value)} id="filtrar">
                     <option value="alfabetica">Ordem Alfabetica</option>
                     <option value="recentes">Mais Recentes</option>
                     <option value="antigas">Mais Antigas</option>
+                    <option value="prioridade">Prioridade</option>"
                 </select>
             </div>
             
@@ -110,6 +118,10 @@ function Lista() {
                             .sort((a, b) => {
                                 if (filtro === "alfabetica") {
                                     return a.tarefa.localeCompare(b.tarefa);
+                                }
+
+                                if (filtro === "prioridade") {
+                                    return b.prioridade.localeCompare(a.prioridade);
                                 }
 
                                 const dataA = new Date(a.criadoEm || 0).getTime();
