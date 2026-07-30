@@ -80,7 +80,7 @@ function Lista() {
     const PrioridadeMap: { [prioridade: string]: number } = {
         "Urgente": 4,
         "Alta": 3, 
-        "Média": 2,
+        "Media": 2,
         "Baixa": 1
     }   
 
